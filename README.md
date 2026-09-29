@@ -1,107 +1,132 @@
-# DiaPort 
-# Consumer Comparator 
+# Vesio
+## Consumer Comparator
 
-**Personal Project · Work in Progress**
+**Personal Project · Full-Stack Web Application**
 
-Web application developed to save, organize and compare products and offers, with a particular focus on the second-hand market.
+A full-stack web application developed to save, organize and compare products and offers, with a particular focus on the second-hand market.
 
-The project was born from the need to collect information from different offers in a single platform, making it easier to compare products and evaluate the available alternatives.
+The project aims to simplify product research by allowing users to collect information from different offers in one place, compare alternatives and make more informed purchasing decisions.
+
+The application is being developed under the name **Vesio**, with the long-term goal of evolving into an AI-assisted decision-support platform.
 
 ## Current Features
 
-The current version of the project focuses on the core infrastructure and product management.
+The current implementation includes the core functionalities required to manage products and user data.
 
-* User management
-* Product categories
-* Product and offer management
-* Product comparison
-* Tracking of site visits
+* User registration and authentication
+* Product categories and categorization
+* Product creation, retrieval and deletion
+* Product image upload and management
+* Product organization and comparison
 * Relational data model for different product categories
-* REST APIs for the main application functionalities
+* REST APIs for frontend-backend communication
+* Persistent data storage using MySQL
+* Responsive frontend interface
+* Dark mode support
 
-## Technical Implementation
+## Technical Stack
 
 ### Backend
 
 * Java 21
 * Spring Boot 3.5.0
-* REST API
+* Spring Data JPA
+* Spring Security
+* REST APIs
+* Maven
 
 ### Database
 
 * MySQL
 * Relational database design
-* Entity relationships
-* Constraints and data integrity
-* Category-specific product data
+* Entity relationships and constraints
+* Data validation and integrity
+* Category-based data modeling
 
 ### Frontend
 
-* HTML
-* CSS
+* React
 * JavaScript
+* HTML5
+* CSS3
+* Vite
+
+### Deployment and Tools
+
+* Docker
+* Docker Compose
+* Git and GitHub
+* Render
+* Cloudflare
 
 ## Architecture
 
-The application is structured around a Spring Boot backend exposing REST APIs and a relational MySQL database.
+The application follows a client-server architecture, with a React frontend communicating with a Spring Boot backend through REST APIs.
 
 ```text
-Frontend
-   │
-   ▼
-REST API
-   │
-   ▼
-Spring Boot
-   │
-   ▼
-MySQL
+React Frontend
+      │
+      ▼
+   REST API
+      │
+      ▼
+Spring Boot Backend
+      │
+      ▼
+   MySQL Database
 ```
 
-The architecture is being progressively developed with the goal of keeping the application modular and allowing additional functionality to be introduced over time.
+The backend handles application logic, authentication, data validation and database operations. The frontend provides the user interface and communicates with the backend through HTTP requests.
+
+Docker and Docker Compose are used to support containerized development and deployment.
 
 ## Project Motivation
 
 The project originated from a personal experience while looking for a new PC to purchase.
 
-I was comparing different offers across multiple websites, but the information I needed was scattered between different listings. To compare them effectively, I repeatedly had to switch between websites and copy and paste relevant information into a separate place just to keep the offers side by side.
+I was comparing different offers across multiple websites, but the information I needed was scattered between different listings. Comparing products required repeatedly switching between websites and manually collecting specifications, prices and other relevant details.
 
-This led me to the idea of creating a single platform where products and offers could be collected, organized and compared in a structured way.
+This led me to the idea of creating a platform where products and offers could be collected, organized and compared in a structured way.
 
-The initial goal was therefore simple: make the comparison process easier and keep all the relevant information in one place.
-
-As development progressed, the project evolved beyond this initial use case. The long-term goal is to turn the comparator into a more complete decision-support platform, helping users evaluate not only prices and specifications, but also how well a product or offer fits their individual needs.
+As development progressed, the project evolved beyond its initial purpose. The long-term vision is to develop a decision-support platform that helps users evaluate products and purchasing opportunities based on their individual needs, preferences and available alternatives.
 
 ## Planned Evolution
 
-The long-term goal is to move beyond simple product comparison and provide more personalized decision support.
+Future development is focused on expanding the application beyond basic product management and comparison.
 
-Planned areas of development include:
+Planned features include:
 
 * Personalized product evaluation based on user preferences
-* More advanced comparison and scoring
+* Advanced comparison criteria and scoring
 * Price history and market analysis
-* Evaluation of alternative offers
 * Identification of potential risks in second-hand purchases
-* AI-assisted analysis and explanations
+* AI-assisted product analysis and explanations
 * Buy / Wait / Avoid recommendations
 * Price and availability monitoring
 * Notifications and alerts
 
-These features represent the planned direction of the project and are **not yet implemented**.
+These features represent the planned direction of the project and are not necessarily available in the current version.
 
 ## Current Status
 
-**MVP / Early Development**
+**MVP · Active Development**
 
-The core backend and database architecture are currently being developed, while the frontend and additional application features are being implemented progressively.
+The application has progressed from its initial backend and database implementation to a full-stack web application with a React frontend, Spring Boot backend and MySQL database.
 
-The project is actively evolving and its architecture may change as new requirements and use cases are identified.
+The project is deployed online, and development is ongoing. Features, architecture and infrastructure may evolve as new requirements are introduced.
+
+## Live Demo
+
+The application is available at:
+
+**[vesio](https://vesioprogetto.scortaqwert.workers.dev/)**
+
+Some features may still be under development, and availability may depend on the hosting infrastructure.
 
 ## Source Code
 
-The source code is currently private while the project is under development.
+The source code is maintained in private repositories while development continues.
 
-This repository is intended to document the project, its architecture, development progress and future direction.
+This repository documents the project's goals, technical architecture, implementation and future development plans.
 
-A public demo may be made available in a future release.
+A public release may be considered in the future.

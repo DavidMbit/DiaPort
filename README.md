@@ -1,5 +1,4 @@
-# Vesio
-## Consumer Comparator
+# Vesio - Consumer Comparator
 
 ## Live Demo
 

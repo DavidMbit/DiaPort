@@ -1,6 +1,13 @@
 # Vesio
 ## Consumer Comparator
 
+## Live Demo
+
+The application is available at:
+
+**[vesio](https://vesioprogetto.scortaqwert.workers.dev/)**
+
+
 **Personal Project · Full-Stack Web Application**
 
 A full-stack web application developed to save, organize and compare products and offers, with a particular focus on the second-hand market.
@@ -114,12 +121,6 @@ These features represent the planned direction of the project and are not necess
 The application has progressed from its initial backend and database implementation to a full-stack web application with a React frontend, Spring Boot backend and MySQL database.
 
 The project is deployed online, and development is ongoing. Features, architecture and infrastructure may evolve as new requirements are introduced.
-
-## Live Demo
-
-The application is available at:
-
-**[vesio](https://vesioprogetto.scortaqwert.workers.dev/)**
 
 Some features may still be under development, and availability may depend on the hosting infrastructure.
 
